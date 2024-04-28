@@ -1,0 +1,32 @@
+.display-container {
+    background-color: lightcyan;
+    padding: 1% 2%;
+    width: 25%;
+}
+
+.display-container h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+    color: var(--primary);
+}
+
+.display-container h3 {
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.display-container p {
+    font-size: 0.8em;
+    font-weight: 400;
+    color: var(--primary);
+}
+
+.post-container {
+    width: 30%;
+    height: 45%;
+    padding: 1.5%;
+    background-color: lightcyan;
+    margin: 2.5%;
+}
