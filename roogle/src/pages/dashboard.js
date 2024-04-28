@@ -50,7 +50,7 @@ const Dashboard = () => {
             console.log("Error logging out:", error.message);
         } else {
             console.log("Logged out successfully");
-            navigate("/");
+            navigate("/Final-Project-V2");
         }
     }
 
