@@ -33,24 +33,40 @@ Developers: Brandon Chin
    Supabase API
 
 7. Reflection
-   In the past year, I've taken Problem Solving, WebTech, and now finally Computer Science. I love building things. So I guess this is one of my final projects as an undergraduate student. Thank you professor. It's been a pleasure.
+   In the past year, I've taken Problem Solving, WebTech, and now finally Computer Science. I love building things. So I guess this is one of my final projects as an undergraduate student. Thank you, professor. It's been a pleasure.
 
     Here is my reflection:
-    When I first started this course, I gave myself two goals. 1. Polish up my foundations of coding. 2. Learn authentication. As a result, I picked a project idea that required authentication and database management.
 
-    What went well was my the UX. I had a great time building and designing the frontend with react. It was fun designing and picking the colors coordination for the website. Famailiarity with useState, useEffect, I was able to get the components to react precisely the way I wanted.
+    When I first started this course, I gave myself two goals:
 
-    I had trouble with connecting with Supabase's API becuase it was my first time using Supabase. So as I was intergrating the database, I was learning it. In addition, it was my first time using a structured database. I really struggled with authentication and then connecting it to my profile table. I also then connected it to my notes table with held all the content for each user.
+    Polish up my foundations of coding.
+    Learn authentication.
 
-    Figuring out Protected Routes was also fun. I never used protected routes becuase it was my first login component. So figuring that out in React documentation was a fun process.
+    As a result, I picked a project idea that required authentication and database management.
 
-    Once I was done with that. One of the biggest problem, I was rerendering the components once new data had been fetched.
+    What went well was my UX. I had a great time building and designing the frontend with React. It was fun designing and picking the color coordination for the website. With familiarity with useState and useEffect, I was able to get the components to react precisely the way I wanted.
 
-    BIGGEST PROBLEM DEPLOYMENT. I spent 2 hours figuring out why browserrouter doesn't work in deployment build but it works fine in development. Found out via Reddit that it uses Hashrouter. So I had to replace that and adjust all the routes.
+    I had trouble connecting with Supabase's API because it was my first time using Supabase. So as I was integrating the database, I was learning it. In addition, it was my first time using a structured database. I really struggled with authentication and then connecting it to my profile table. I also then connected it to my notes table which held all the content for each user. I had to use SQL Editor to manually create a trigger so that when a new user joins via Auth table, their information will also be populated into the profile table. That was a bit hard. I also discovered a quick plpsql in the documentation for the table function:
 
-    Going forward, I need to focus on database management and useEffect and passing functions in props. I know a broad sense of it from my online courses but I need to refine it becuase it took me awhile.
+    BEGIN
+    INSERT INTO public.profile (id, email, first_name, last_name)
+    VALUES (new.id, new.email, new.raw_user_meta_data ->> 'first_name', new.raw_user_meta_data ->> 'last_name');
+    RETURN new;
+    END
+
+    Figuring out Protected Routes was also fun. I never used protected routes because it was my first login component. So figuring that out in React documentation was a fun process. I was testing if can bypass the protected routes via URL changes. It didn't work. I was glad.
+
+    Once I was done with that, one of the biggest problems was rerendering the components once new data had been fetched. I had to useEffect, react hook, to render when there is a change in a specific parameter (state or UI).
+
+    I learned that through console.log(data.user), I can visualize the data supabase returns when you authenticate a user. There I found that websites hold an access token assigned to the user's session. So it doesn't require a fetch data every page. Once the user signs out, it removes the session and token.
+
+    BIGGEST PROBLEM: DEPLOYMENT. I spent 2 hours figuring out why BrowserRouter doesn't work in the deployment build but it works fine in development. Found out via Reddit that it uses HashRouter. So I had to replace that and adjust all the routes.
+
+    Going forward, I need to focus on database management, useEffect, and passing functions in props. I know a broad sense of it from my online courses but I need to refine it because it took me a while.
 
     ChatGPT helped me figure out what the error code meant and offered possible solutions to fix.
+
+    Anyway. Thanks for the opportunity to do this project. It was really fun.
 
     Database screenshots:
     ![Alt text](image.png) auth table -- supabase standard auth
