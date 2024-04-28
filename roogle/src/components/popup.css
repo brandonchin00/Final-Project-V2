@@ -2,3 +2,33 @@
     display: block;
     background-color: var(--secondary);
 }
+
+.form-input {
+    padding: 1%;
+    width: 85%;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    font-family: sans-serif;
+    background-color: #f2f7f2;
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 1%;
+}
+
+.content-input {
+    height: 45vh;
+}
+
+#button-pop {
+    background-color: var(--tertiary);
+    border: none;
+    border-radius: 5px;
+    padding: 1% 5%;
+    font-size: 1.5em;
+    margin: 5%;
+    cursor: pointer;
+}
+
+#button-pop:hover {
+    background-color: #93ff93;
+}

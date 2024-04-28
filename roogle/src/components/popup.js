@@ -40,36 +40,41 @@ const Form = ({ parentCallback }) => {
         // This is the HTML that will be rendered on the page. It is a combination of JSX and HTML
         <form id="new-post-form" onSubmit={handleCreate}>
             <div>
-                <label>Title:</label>
                 <input
+                    className="form-input"
                     type="text"
                     name="title"
                     value={title}
+                    placeholder="Title"
                     onChange={(e) => setTitle(e.target.value)}
                     required
                 />
             </div>
             <div>
-                <label>Category:</label>
                 <input
+                    className="form-input"
                     type="text"
                     name="category"
                     value={category}
+                    placeholder="Category"
                     onChange={(e) => setCategory(e.target.value)}
                     required
                 />
             </div>
             <div>
-                <label>Content:</label>
-                <input
+                <textarea
+                    className="form-input content-input"
                     type="text"
                     name="content"
                     value={content}
+                    placeholder="Content"
                     onChange={(e) => setContent(e.target.value)}
                     required
                 />
             </div>
-            <button type="submit">Submit</button>
+            <button id="button-pop" type="submit">
+                SUBMIT
+            </button>
         </form>
     );
 };

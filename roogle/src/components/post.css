@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 .display-container {
     background-color: lightcyan;
     padding: 1% 2%;
@@ -29,4 +32,22 @@
     padding: 1.5%;
     background-color: lightcyan;
     margin: 2.5%;
+}
+
+#content-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2em;
+}
+
+#content-category {
+    font-family: "lora", sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+#content-content {
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 1em;
+    font-weight: 400;
 }

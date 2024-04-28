@@ -1,5 +1,8 @@
 /* just CSS stuff, nothing crazy. Just used :root to establish global colors to call from. Did not use screensize width to adjust fontsize so right now not reactive to devices*/
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .dashboard-container {
     display: flex;
     flex-direction: row;
@@ -22,10 +25,38 @@
     display: block;
 }
 
-h1 {
-    font-size: 1.5em;
-    font-weight: 600;
+.navbar-title {
+    font-size: 2em;
+    font-weight: 800;
     color: var(--tertiary);
+    font-family: "Montserrat", sans-serif;
+    margin: 0% 0% 15% 0%;
+}
+
+.note-title {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: var(--tertiary);
+    font-family: "Montserrat", sans-serif;
+    margin: 0% 6%;
+}
+
+#button-signout {
+    background-color: var(--secondary);
+    color: var(--primary);
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 1% 5%;
+    font-size: 1.2em;
+    margin: 5%;
+    cursor: pointer;
+}
+
+#button-signout:hover {
+    background-color: #ef6546;
 }
 
 .content-container {

@@ -60,11 +60,19 @@ const Dashboard = () => {
         <div className="dashboard-container">
             <div className="navbar-side">
                 <div className="navbar-title-container">
-                    <h1>{name ? name : "Loading..."}</h1>
+                    <h1 className="navbar-title ">
+                        {" "}
+                        {name ? name : "Loading..."}
+                    </h1>
                 </div>
                 <div className="navbar-items">
-                    <Form parentCallback={fetchData} />
-                    <button onClick={signOut}>Sign Out</button>
+                    <div>
+                        <h3 className="note-title">NEW NOTE:</h3>
+                        <Form parentCallback={fetchData} />
+                    </div>
+                    <button id="button-signout" onClick={signOut}>
+                        SIGN OUT
+                    </button>
                 </div>
             </div>
             {/* I love this function. Loops using map to render post by the data array provided from Post that is set by setPosts(returnData3.data) */}
