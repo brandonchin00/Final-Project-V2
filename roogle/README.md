@@ -1,5 +1,7 @@
 Developers: Brandon Chin
 
+WARNING: You will not see much commits in this repo becuase I had an issue with deployment last minute. So I couldn't fix it so, I created another repo and copy pasted my code. If you want to see all the commits please visit my Final Project repo (it is public). I messed up with the deployment process.
+
 1. Project Overview
    A online notebook where you can easily store quick notes and access it anywhere on the web. All you need is your email and password to access it.
 
