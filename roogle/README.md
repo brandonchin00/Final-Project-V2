@@ -50,5 +50,7 @@ Developers: Brandon Chin
     ChatGPT helped me figure out what the error code meant and offered possible solutions to fix.
 
     Database screenshots:
-    ![Alt text](image.png)
-    ![Alt text](image-1.png)
+    ![Alt text](image.png) auth table -- supabase standard auth
+    ![Alt text](image-1.png) profile table -- handle user first name last name
+    ![Alt text](image-2.png) notes table -- handle user notes
+    ![Alt text](image-3.png) figma file -- for reference

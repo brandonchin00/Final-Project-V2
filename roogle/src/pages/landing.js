@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
     const navigate = useNavigate();
+    //useNavigate is a hook that returns a navigate function that you can use to navigate through the routes. It is provided by react-router-dom
 
     const handleSignIn = async (event) => {
         event.preventDefault();
@@ -13,6 +14,7 @@ const Landing = () => {
             email: event.target.username.value,
             password: event.target.password.value,
         });
+        // supabase.auth.signInWithPassword is a function that signs in a user with an email and password. It is provided by supabase documentation
 
         console.log(data);
 
@@ -21,6 +23,7 @@ const Landing = () => {
         } else {
             navigate("/dashboard");
             console.log("Signed in successfully:", data);
+            //testing purposes console.log
         }
     };
 
