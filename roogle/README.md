@@ -33,7 +33,10 @@ Developers: Brandon Chin
    Supabase API
 
 7. Reflection
-   When I first started this course, I gave myself a goal. 1. Polish up my foundations of coding. 2. Learn authentication. As a result, I picked a project idea that required authentication and database management.
+   In the past year, I've taken Problem Solving, WebTech, and now finally Computer Science. I love building things. So I guess this is one of my final projects as an undergraduate student. Thank you professor. It's been a pleasure.
+
+    Here is my reflection:
+    When I first started this course, I gave myself a goal. 1. Polish up my foundations of coding. 2. Learn authentication. As a result, I picked a project idea that required authentication and database management.
 
     What went well was my the UX. I had a great time building and designing the frontend with react. It was fun designing and picking the colors coordination for the website. Famailiarity with useState, useEffect, I was able to get the components to react precisely the way I wanted.
 
