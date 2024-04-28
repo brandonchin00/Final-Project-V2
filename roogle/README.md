@@ -6,6 +6,7 @@ WARNING: You will not see much commits in this repo becuase I had an issue with 
    A online notebook where you can easily store quick notes and access it anywhere on the web. All you need is your email and password to access it.
 
 2. Usage Guidelines
+   WARNING: Please start the webpage with # in the URL --> https://brandonchin00.github.io/Final-Project-V2/# (idk why but it is broken if you use it without the #, I'm assuming it is a clash with Github provided link and my hash route)
 
     1. First create an account with the website. Or Login with an Account if you want. Here is my account login and details for testing purposes: Username - brandonzchin@gmail.com | Password - 1234. If you're creating an account, click the register button and fill in the necessary details.
     2. Once you're successful, you'll be redirected to dashboard page
