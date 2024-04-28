@@ -5,6 +5,7 @@ import { supabase } from "../components/client.js";
 
 const handleSignUp = async (event) => {
     event.preventDefault();
+
     const { data, error } = await supabase.auth.signUp({
         email: event.target.email.value,
         password: event.target.password.value,
@@ -20,6 +21,7 @@ const handleSignUp = async (event) => {
         console.error("Error signing up:", error.message);
     } else {
         console.log("Signed up successfully:", data);
+        alert("Signed up successfully! Please sign in to continue.");
     }
 };
 

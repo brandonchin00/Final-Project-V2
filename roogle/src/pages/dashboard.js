@@ -50,7 +50,8 @@ const Dashboard = () => {
             console.log("Error logging out:", error.message);
         } else {
             console.log("Logged out successfully");
-            navigate("/Final-Project-V2");
+            localStorage.removeItem("supabase.auth.token");
+            navigate("/");
         }
     }
 
