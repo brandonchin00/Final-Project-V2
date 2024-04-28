@@ -45,7 +45,7 @@
 
 #button-signout {
     background-color: var(--secondary);
-    color: var(--primary);
+    color: black;
     border: none;
     border-radius: 5px;
     font-weight: 700;
@@ -56,7 +56,7 @@
 }
 
 #button-signout:hover {
-    background-color: #ef6546;
+    background-color: #ff522b;
 }
 
 .content-container {

@@ -27,22 +27,26 @@ const Post = (props) => {
     return (
         //if props.title is not loaded, display loading
         <div className="post-container">
-            <div className="content-title-container">
-                <h2 id="content-title">
-                    {props.title ? props.title : "Loading..."}
-                </h2>
+            <div>
+                <div className="content-title-container">
+                    <h2 id="content-title">
+                        {props.title ? props.title : "Loading..."}
+                    </h2>
+                </div>
+                <div className="content-category-container">
+                    <h3 id="content-category">
+                        {props.category ? props.category : "Loading..."}
+                    </h3>
+                </div>
+                <div className="content-content-container">
+                    <p id="content-content">
+                        {props.content ? props.content : "Loading..."}
+                    </p>
+                </div>
             </div>
-            <div className="content-category-container">
-                <h3 id="content-category">
-                    {props.category ? props.category : "Loading..."}
-                </h3>
-            </div>
-            <div className="content-content-container">
-                <p id="content-content">
-                    {props.content ? props.content : "Loading..."}
-                </p>
-            </div>
-            <button onClick={handleDelete}>Delete</button>
+            <button id="delete-button" onClick={handleDelete}>
+                Delete
+            </button>
         </div>
     );
 };
