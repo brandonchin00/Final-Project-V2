@@ -17,10 +17,10 @@ const Landing = () => {
         console.log(data);
 
         if (error) {
-            console.error("Error signing in:", error.message);
+            alert("Error signing in:", error.message);
         } else {
-            console.log("Signed in successfully:", data);
             navigate("/dashboard");
+            console.log("Signed in successfully:", data);
         }
     };
 

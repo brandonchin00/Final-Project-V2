@@ -48,3 +48,7 @@ Developers: Brandon Chin
     Going forward, I need to focus on database management and useEffect and passing functions in props. I know a broad sense of it from my online courses but I need to refine it becuase it took me awhile.
 
     ChatGPT helped me figure out what the error code meant and offered possible solutions to fix.
+
+    Database screenshots:
+    ![Alt text](image.png)
+    ![Alt text](image-1.png)

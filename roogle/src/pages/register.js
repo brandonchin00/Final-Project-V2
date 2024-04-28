@@ -4,8 +4,11 @@ import { Link } from "react-router-dom";
 import { supabase } from "../components/client.js";
 
 const handleSignUp = async (event) => {
+    // Function to handle the sign up process, async function that takes in an event, which is the form submission event, and prevents the default action
+    // You want to use async and await becuase you're waiting a reponse from supabase. If you don't the element will render without the data and return an error to the user
     event.preventDefault();
 
+    // supabase.auth.signUp is a function that signs up a user with an email and password. It is provided by supabase documentation
     const { data, error } = await supabase.auth.signUp({
         email: event.target.email.value,
         password: event.target.password.value,
@@ -26,6 +29,7 @@ const handleSignUp = async (event) => {
 };
 
 const Register = () => {
+    // Register Page Component, renders the HTML elements for the Register Page
     return (
         <div>
             <h1 id="logo">Roogle</h1>
@@ -38,7 +42,7 @@ const Register = () => {
                 </div>
                 <form
                     className="form-container"
-                    onSubmit={handleSignUp}
+                    onSubmit={handleSignUp} // Calls the handleSignUp function when the form is submitted
                     autoComplete="off"
                 >
                     <input
@@ -68,7 +72,7 @@ const Register = () => {
                     <button
                         id="sign-in-button"
                         type="submit"
-                        onSubmit={handleSignUp}
+                        onSubmit={handleSignUp} // Calls the handleSignUp function when the button is clicked
                     >
                         Register
                     </button>

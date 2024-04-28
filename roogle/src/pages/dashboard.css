@@ -1,3 +1,5 @@
+/* just CSS stuff, nothing crazy. Just used :root to establish global colors to call from. Did not use screensize width to adjust fontsize so right now not reactive to devices*/
+
 .dashboard-container {
     display: flex;
     flex-direction: row;

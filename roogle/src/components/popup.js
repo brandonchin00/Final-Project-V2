@@ -29,14 +29,15 @@ const Form = ({ parentCallback }) => {
             console.error("Error inserting data:", error.message);
         } else {
             console.log("Data inserted successfully");
-            // Optionally, you can reset the form fields after successful submission
             setTitle("");
             setCategory("");
             setContent("");
+            //lets reset the forms after the data is inserted
         }
     };
 
     return (
+        // This is the HTML that will be rendered on the page. It is a combination of JSX and HTML
         <form id="new-post-form" onSubmit={handleCreate}>
             <div>
                 <label>Title:</label>

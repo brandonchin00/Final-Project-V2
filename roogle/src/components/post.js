@@ -5,7 +5,7 @@ import { supabase } from "../components/client.js";
 const Post = (props) => {
     const handleDelete = async () => {
         try {
-            const { error } = await supabase
+            const { error } = await supabase ///supabase documentation for deleting data
                 .from("notes")
                 .delete()
                 .eq("id", props.id);
@@ -15,7 +15,7 @@ const Post = (props) => {
             if (error) {
                 throw error;
             } else {
-                props.parentCallback();
+                props.parentCallback(); //callback function to reload posts after a post is deleted
             }
 
             console.log("Data deleted successfully");
@@ -25,6 +25,7 @@ const Post = (props) => {
     };
 
     return (
+        //if props.title is not loaded, display loading
         <div className="post-container">
             <div className="content-title-container">
                 <h2>{props.title ? props.title : "Loading..."}</h2>
